@@ -3,7 +3,7 @@
 ---
 ## **1. Preparation Guide**
 
-- Download [BoxBiling](https://www.boxbilling.com/download)
+- Download [BoxBilling](https://www.boxbilling.com/download)
 
 - Move and extract BoxBilling inside this folder (_where `docker_compose.yml` is located_)
 
@@ -20,6 +20,8 @@ _make sure your current directory is correct_
 # Build images and start running containers.
 
 $ docker-compose up --build
+
+#this will take a few mintues depending on internet connection
 ```
 
 - ## **2.1 Front-End Landing Page**
