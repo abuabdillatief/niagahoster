@@ -1,5 +1,6 @@
-# **BoxBilling Installation Step-By-Step (Niagahoster)**
-
+# **BoxBilling Installation Step-By-Step**
+### **by Mohammad Rendra**
+---
 ## **1. Preparation Guide**
 
 - Download [BoxBiling](https://www.boxbilling.com/download)
@@ -21,11 +22,11 @@ _make sure your current directory is correct_
 $ docker-compose up --build
 ```
 
-- ## __2.1 Front-End Landing Page__
+- ## **2.1 Front-End Landing Page**
 
   To see front-end landing page, go to: [localhost:8080](http:localhost:8080)
 
-- ## __2.2 BoxBilling App__
+- ## **2.2 BoxBilling App**
 
   Go to: [localhost:8004/boxbilling/install/](http:localhost:8004/boxbilling/install/)
 
@@ -47,18 +48,22 @@ $ docker-compose up --build
 
 ---
 
-## Here, `BoxBilling` installation has been completed.
+#### Here, `BoxBilling` installation has been completed. Click `Finish` and follow other instructions to register as client or login as Admin using the credentials you put.
 
-<!-- But there are still some recommendations:
- - Remove installation module
- - Change configuration file permissions
- - Disable directory listing with .htaccess
- - Setup cron job
-##To automate this process, execute `after-installation.sh` file provide this directory by running:
+---
+<!-- 
+But there are still some recommendations:
+### **Do this after you login as admin.**
+
+- Remove installation module
+- Change configuration file permissions
+- Disable directory listing with .htaccess
+- Setup cron job
+  ##To automate this process, execute `after-installation.sh` file provide this directory by running:
+
 ```
 ./after-installation.sh
 ``` -->
-### Finally `Finish` and follow other instructions to register as client or login as Admin.
 
 ---
 
