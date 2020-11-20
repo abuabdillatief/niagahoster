@@ -1,0 +1,132 @@
+.packages {
+  padding: 0 2rem;
+  margin: 2rem 0;
+  &__tagline {
+    margin: 5rem auto;
+    width: 80%;
+    h1 {
+      font-size: 2.3rem;
+      font-family: Montserrat-Bold;
+    }
+    p {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__container {
+    @include flex(null, center, flex-start);
+    width: 100%;
+    margin: 2rem 0;
+
+    .package {
+      @include flex(null, null, center);
+      position: relative;
+      width: 25%;
+      overflow: hidden;
+
+      > div {
+        width: 100%;
+        text-align: center;
+      }
+      border: solid 1px #ededed;
+      flex-direction: column;
+
+      &--active {
+        border: solid 1px #0f79ea;
+      }
+
+      &__best-seller {
+        background-color: #17a748;
+        padding: 0.5rem 0;
+        position: absolute;
+        font-size: 0.85rem;
+        font-weight: bolder;
+        margin: 0;
+        top: 0;
+        left: 0;
+        color: white;
+        transform: rotateZ(-45deg) translateX(-2.8rem) translateY(-1rem);
+        width: 50%;
+        box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.5);
+      }
+
+      &__border {
+        border-bottom: solid 1px #ededed;
+      }
+
+      &__title {
+        &--active {
+          background: #66a4d7;
+          color: white;
+        }
+        h1 {
+          font-size: 1.8rem;
+          font-family: Montserrat-Bold;
+        }
+      }
+
+      &__price {
+        @include flex(null, null, center);
+        flex-direction: column;
+        > div {
+          margin: 0;
+        }
+
+        &--active {
+          background: #66a4d7;
+          > div {
+            color: white;
+          }
+        }
+
+        &__was p {
+          text-decoration: line-through;
+        }
+
+        &__now {
+          @include flex(null, null, flex-start);
+
+          &--thousands {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1;
+            display: inline-block;
+          }
+
+          &--hundreds {
+            font-weight: bolder;
+          }
+        }
+      }
+
+      &__users {
+        &--active {
+          background: #2579c3;
+          color: white;
+        }
+        &__amount {
+          font-weight: bolder;
+        }
+      }
+
+      &__benefits {
+        &__main,
+        &--highlight {
+          font-weight: bolder;
+        }
+      }
+
+      &__btn {
+        &--active {
+          background: #2579c3;
+          color: white;
+        }
+        border: solid 1px #9f9f9f;
+        font-size: 1rem;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "./abstracts/__variables.scss";
+@import "./abstracts/__mixins.scss";
+@import "./base/__reset.scss";
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.middle__container {
+  width: 100%;
+
+  border-top: solid 1px #edecec;
+  border-bottom: solid 1px #edecec;
+}
+.add__invert {
+  filter: contrast(100%) invert(100%) grayscale(100%);
+}
+
+//Components
+@import "./components/__header.scss";
+@import "./components/__banner.scss";
+@import "./components/__tools.scss";
+@import "./components/__packages.scss";
+@import "./components/__advantages.scss";
+@import "./components/__features.scss";
+@import "./components/__laravel__support.scss";
+@import "./components/__modules.scss";
+@import "./components/__advertisement.scss";
+@import "./components/__share__container.scss";
+@import "./components/__help__container.scss";
+@import "./components/__footer.scss";
+@import "./components/__copyright.scss";
+
+//Responsive
+@import "./screens/__laptop.scss";
+@import "./screens/__tablet.scss";
+@import "./screens/__phone.scss";

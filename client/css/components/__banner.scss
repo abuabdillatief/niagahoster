@@ -1,0 +1,30 @@
+.banner {
+  @include flex(basic, null, center);
+  > div {
+    width: 50%;
+  }
+
+  &__info {
+    &__primary {
+      font-family: Montserrat-Bold;
+      margin: 20px 0;
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+    &__secondary {
+      font-size: 2.5rem;
+    }
+    &__benefit {
+      list-style: none;
+      margin: 5px 0;
+
+      &--icon {
+        color: #18a838;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+  }
+}

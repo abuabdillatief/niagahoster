@@ -1,0 +1,46 @@
+.laravel__support {
+  margin: auto 2rem;
+  &--tagline {
+    font-size: 2rem;
+    font-family: Montserrat-Light;
+  }
+
+  &__container {
+    display: flex;
+    &__left,
+    &__right {
+      width: 50%;
+    }
+
+    &__left {
+      @include flex(null, null, flex-start);
+      flex-direction: column;
+
+      > * {
+        margin: 1rem 0;
+      }
+
+      &--tagline {
+        font-size: 1.5rem;
+        font-family: Montserrat-Light;
+      }
+
+      &__list {
+        list-style: none;
+        &--item {
+          font-size: large;
+          margin: 1rem 0;
+        }
+      }
+
+      &__btn {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 100px;
+        background-color: #0f79ea;
+      }
+    }
+  }
+}

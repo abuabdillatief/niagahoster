@@ -1,0 +1,38 @@
+.advantages {
+  @include flex(null, center, center);
+  flex-direction: column;
+  &__tagline {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: Montserrat-Light;
+  }
+
+  &__table {
+    @include flex(null, space-evenly);
+    margin: 1rem 0;
+    width: 80%;
+
+    &--bg {
+      background-color: #f5f5f5;
+    }
+    &__left,
+    &__right {
+      height: max-content;
+      margin: 0 1rem;
+      width: 40%;
+      border-top: 1px solid #ededed;
+      border-left: 1px solid #ededed;
+      border-right: 1px solid #ededed;
+    }
+
+    &--item {
+      position: relative;
+      &--icon {
+        position: absolute;
+        left: 1rem;
+      }
+      font-size: 1rem;
+      border-bottom: solid 1px #ededed;
+    }
+  }
+}

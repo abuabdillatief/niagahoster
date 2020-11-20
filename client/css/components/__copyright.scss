@@ -1,0 +1,11 @@
+.copyright {
+  margin: 1rem 0;
+  > * {
+    margin: 1rem 0;
+  }
+  &__upper {
+    border-top: solid 1px #121212;
+    padding-top: 1rem;
+    @include flex(null, space-between, null);
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "advantages": [
+    "max execution time 300s",
+    "post max size 128 MB",
+    "max execution time 300s",
+    "upload max filesize 128 MB",
+    "php memory limit 1024 MB",
+    "max input vars 2500"
+  ]
+}

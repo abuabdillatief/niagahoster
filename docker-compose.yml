@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  database:
+    container_name: mysql
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    ports:
+      - 3306:3306
+  web:
+    build:
+      context: ./PHP
+      dockerfile: Dockerfile
+    container_name: php
+    depends_on:
+      - database
+    volumes:
+      - ./BoxBilling/:/var/www/html/boxbilling/
+      - ./BoxBilling/bb-data/:/var/www/html/boxbilling/bb-data
+    ports:
+      - 8004:80
+    stdin_open: true
+    tty: true
+  client:
+    build: 
+      context: ./client/ 
+    volumes: 
+      - ./client:/var/www/html/
+    ports: 
+      - 8080:80

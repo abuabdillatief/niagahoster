@@ -1,0 +1,11 @@
+@mixin flex($padding, $justify: flex-start, $align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $padding == basic {
+    padding: 0 2rem;
+  } @else {
+    padding: 0;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tools": [
+    {
+      "tech": "PHP Zend Guard Loader",
+      "image": "zend",
+      "width": "50%"
+    },
+    {
+      "tech": "PHP Composer",
+      "image": "composer",
+      "width": "40%"
+    },
+    {
+      "tech": "PHP ionCube-Loader",
+      "image": "IonCube-Loader",
+      "width": "70%"
+    }
+  ]
+}

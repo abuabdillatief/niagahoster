@@ -1,0 +1,36 @@
+.share__container {
+  .wrapper > div {
+    padding: 1rem 2rem;
+  }
+  background-color: #ededed;
+
+  &__left p {
+    font-family: Montserrat-Regular;
+  }
+
+  &__right {
+    display: flex;
+
+    .icon__container {
+      @include flex(null, null, center);
+    }
+    .icon__amount {
+      margin-left: 5px;
+      padding: 2px 10px;
+      border: solid 1px #cdcdcd;
+      border-radius: 3px;
+    }
+
+    .facebook {
+      color: #1c4588;
+    }
+
+    .twitter {
+      color: #159ded;
+    }
+
+    .google {
+      color: #f9312a;
+    }
+  }
+}

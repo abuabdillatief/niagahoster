@@ -1,0 +1,33 @@
+.features {
+  padding: 5px 2rem;
+  margin: 2rem auto;
+
+  &__line {
+    width: 8%;
+    border: 2px solid #ededed;
+    margin: 1rem auto;
+  }
+
+  &__tagline {
+    font-size: 2rem;
+    margin: 1rem auto;
+    font-family: Montserrat-Light;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .feature {
+      @include flex(basic, center, center);
+      flex-direction: column;
+      margin: 2rem 0;
+      &__img {
+        width: 30%;
+      }
+
+      &__name {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "features": [
+    {
+      "name": "PHP Semua Versi",
+      "desc": "Pilih mulai dari versi PHP 5.3 s/d PHP 7. Ubah sesuka Anda!",
+      "image": "PHP Semua Versi.svg"
+    },
+    {
+      "name": "MySQL Versi 5.6",
+      "desc": "Nikmati MySQL versi terbaru, tercepat dan kaya akan fitur.",
+      "image": "My SQL.svg"
+    },
+    {
+      "name": "Pane Hosting cPanel",
+      "desc": "Kelola website dengan panel canggih yang familiar di hati Anda.",
+      "image": "CPanel.svg"
+    },
+    {
+      "name": "Garansi Uptime 99.9%",
+      "desc": "Data center yang mendukung kelangsungan website Anda 24/7.",
+      "image": "garansi uptime.svg"
+    },
+    {
+      "name": "Database innoDB Unlimited",
+      "desc": "Jumlah dan ukuran database yang tumbuh sesuai kebutuhan Anda.",
+      "image": "InnoDB.svg"
+    },
+    {
+      "name": "Wildcard Remote MySQL",
+      "desc": "Mendukung s/d max_user_connections 100 max_connections.",
+      "image": "My SQL remote.svg"
+    }
+  ]
+}

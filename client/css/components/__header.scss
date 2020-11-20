@@ -1,0 +1,89 @@
+.header {
+  display: block;
+  height: 115px;
+  z-index: 100;
+  background-color: white;
+  border-top: solid 1px #edecec;
+
+  &__upper {
+    @include flex(basic, space-between, center);
+
+    &__left {
+      @include flex(null, null, center);
+      &--item--icon {
+        padding: 0px 5px;
+      }
+    }
+
+    &__right {
+      @include flex(null, null, center);
+
+      &--item {
+        margin-left: 1rem;
+
+        &--icon {
+          padding: 0px 5px;
+        }
+      }
+    }
+  }
+
+  &__lower {
+    @include flex(null, null, center);
+    border-top: solid 1px #edecec;
+    border-bottom: solid 1px #edecec;
+
+    > div {
+      padding: 0 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    &__left {
+      width: 25%;
+    }
+
+    &__right {
+      width: 75%;
+
+      .slide {
+        left: 70%;
+      }
+
+      ul {
+        @include flex(null, flex-end, null);
+      }
+      &--tab {
+        width: fit-content;
+        margin-left: 1rem;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      position: relative;
+      flex-direction: column;
+      input {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 100;
+        cursor: pointer;
+      }
+      span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin: 3px 0;
+        background-color: #2299d9;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

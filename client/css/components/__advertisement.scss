@@ -1,0 +1,42 @@
+.advertisement {
+  @include flex(basic, null, center);
+  > div {
+    width: 50%;
+  }
+
+  &__left {
+    @include flex(null, space-around, null);
+    flex-direction: column;
+    font-size: 1.2rem;
+
+    > * {
+      margin: 0.5rem 0;
+    }
+
+    &__tagline {
+      width: 80%;
+      font-size: 2.4rem;
+      font-family: Montserrat-Light;
+    }
+
+    &__desc {
+      font-family: Montserrat-Light;
+    }
+
+    &--btn {
+      width: max-content;
+      font-size: 1rem;
+      font-weight: bolder;
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      background-color: #0f79ea;
+      color: white;
+    }
+  }
+
+  &__right {
+    img {
+      width: 100%;
+    }
+  }
+}

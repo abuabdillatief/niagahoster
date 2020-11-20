@@ -1,0 +1,32 @@
+
+.help__container {
+  color: white;
+  background-color: #138fef;
+  padding: 4rem 0;
+
+  &--inner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 0 2rem;
+  }
+
+  .help__contact {
+    font-size: 2.5rem;
+    font-family: Montserrat-Light;
+
+    strong {
+      font-family: Montserrat-Bold;
+    }
+  }
+
+  .help__livechat {
+    font-size: 1.5rem;
+    border-left: solid 1px white;
+
+    &__inner {
+      padding: 0.5rem 2rem;
+      border: solid 2px white;
+      border-radius: 100px;
+    }
+  }
+}

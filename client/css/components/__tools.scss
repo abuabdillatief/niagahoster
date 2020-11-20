@@ -1,0 +1,19 @@
+.tools {
+  margin: 2rem 0;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  @include flex(basic, center);
+  &__item {
+    @include flex(null, flex-end);
+    width: 25%;
+    flex-direction: column;
+    margin: 10px;
+
+    &--img {
+      @include flex;
+
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "packages": [
+    {
+      "status": false,
+      "title": "Bayi",
+      "old_price": "19900",
+      "current_price": { "thousands": "14", "hundreds": "900" },
+      "users": "938",
+      "main_benefits": "0.5X RESOURCE POWER",
+      "benefits": [
+        ["500 MB", "Disk Space"],
+        ["Unlimeted", "Bandwidth"],
+        ["Unlimiited", "Databases"],
+        ["1", "Domain"],
+        ["Instant", "Backup"],
+        ["Unlimited SSL", "Gratis Selamanya"]
+      ]
+    },
+    {
+      "status": false,
+      "title": "Pelajar",
+      "old_price": "46900",
+      "current_price": { "thousands": "23", "hundreds": "450" },
+      "users": "4168",
+      "main_benefits": "1X RESOURCE POWER",
+      "benefits": [
+        ["Unlimited", "Disk Space"],
+        ["Unlimeted", "Bandwidth"],
+        ["Unlimeted", "POP3 Email"],
+        ["Unlimiited", "Databases"],
+        ["10", "Addon Domains"],
+        ["Instant", "Backup"],
+        ["Domain Gratis", "Selamanya"],
+        ["Unlimited SSL", "Gratis Selamanya"]
+      ]
+    },
+    {
+      "status": true,
+      "title": "Personal",
+      "old_price": "58900",
+      "current_price": { "thousands": "38", "hundreds": "900" },
+
+      "users": "10017",
+      "main_benefits": "2X RESOURCE POWER",
+      "benefits": [
+        ["Unlimited", "Disk Space"],
+        ["Unlimeted", "Bandwidth"],
+        ["Unlimeted", "POP3 Email"],
+        ["Unlimiited", "Databases"],
+        ["Unlimited", "Addon Domains"],
+        ["Instant", "Backup"],
+        ["Domain Gratis", "Selamanya"],
+        ["Unlimited SSL", "Gratis Selamanya"],
+        ["Private", "Name Server"],
+        ["Spam Assasin", "Mail Protection"]
+      ]
+    },
+    {
+      "status": false,
+      "title": "Bisnis",
+      "old_price": "109900",
+      "current_price": { "thousands": "65", "hundreds": "900" },
+
+      "users": "3552",
+      "main_benefits": "3X RESOURCE POWER",
+      "benefits": [
+        ["Unlimited", "Disk Space"],
+        ["Unlimeted", "Bandwidth"],
+        ["Unlimeted", "POP3 Email"],
+        ["Unlimiited", "Databases"],
+        ["Unlimited", "Addon Domains"],
+        ["Magic Auto", "Backup & Restore"],
+        ["Domain Gratis", "Selamanya"],
+        ["Unlimited SSL", "Gratis Selamanya"],
+        ["Private", "Name Server"],
+        ["Prioritas", "Layanan Support"],
+        ["Prioritas", "Layanan Support"],
+        ["★★★★★"],
+        ["SpamExpert", "Pro Mail Protection"]
+      ]
+    }
+  ]
+}

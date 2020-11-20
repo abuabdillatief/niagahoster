@@ -1,0 +1,76 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  color: #cdcdcd;
+
+  > * > * {
+    padding: 0 2rem;
+  }
+
+  &__upper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__card {
+    margin: 1rem 0;
+    .newsletter {
+      opacity: 0;
+    }
+    &__title {
+      font-size: 1rem;
+      font-family: Montserrat-Regular;
+      color: #7b7b7b;
+    }
+    &__details {
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &__lower {
+    &--title {
+      font-family: Montserrat-Bold;
+    }
+
+    &__logos {
+      @include flex(null, null, center);
+    }
+
+    &__logo {
+      border: solid 1px #ededed;
+      padding: 0.5rem;
+      border-radius: 5px;
+      filter: grayscale(100%);
+
+      > img {
+        height: 2rem;
+      }
+    }
+  }
+
+  &__subscription {
+    &--form {
+      padding: 0.5rem 1rem 0.5rem 2rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+    }
+    &--btn {
+      padding: 1rem;
+      background-color: #138fef;
+      border: solid 1px #ededed;
+      border-radius: 100px;
+    }
+  }
+
+  &__share__container {
+    display: flex;
+    > * {
+      margin: 0 1rem;
+    }
+  }
+}

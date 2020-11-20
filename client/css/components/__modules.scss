@@ -1,0 +1,28 @@
+.modules {
+  @include flex(null, null, center);
+  flex-direction: column;
+  &__tagline {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-family: Montserrat-Light;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem;
+
+    &__inner p {
+      font-size: 1rem;
+    }
+  }
+
+  &__btn {
+    width: 15%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: solid 2px #545454;
+    border-radius: 100px;
+  }
+}
