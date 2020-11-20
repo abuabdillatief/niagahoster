@@ -1,135 +1,138 @@
 @media (max-width: 1200px) {
-    .header {
-      &__upper {
-        li,
-        a {
-          font-size: smaller;
-        }
+  .header {
+    &__upper {
+      li,
+      a {
+        font-size: smaller;
       }
-  
-      &__lower {
-        .menu-toggle {
-          display: block;
-        }
-  
-        &__left {
-          padding: 0;
-        }
-  
-        &__right {
-          > ul {
-            position: fixed;
-            background-color: #0f79ea;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-size: 1rem;
-            text-transform: uppercase;
-            width: 30%;
-            height: 100vh;
-            top: 100px;
-            left: 100%;
-            transition: all 0.5s;
-            z-index: 100;
-  
-            > li {
-              margin: 0.5rem 0;
-              transition: 0.3s ease;
-              color: white;
-            }
+    }
+
+    &__lower {
+      .menu-toggle {
+        display: block;
+      }
+
+      &__left {
+        padding: 0;
+      }
+
+      &__right {
+        > ul {
+          position: fixed;
+          background-color: #0f79ea;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          font-size: 1rem;
+          text-transform: uppercase;
+          width: 30%;
+          height: 100vh;
+          top: 100px;
+          left: 100%;
+          transition: all 0.5s;
+          z-index: 100;
+
+          > li {
+            margin: 0.5rem 0;
+            transition: 0.3s ease;
+            color: white;
           }
         }
       }
     }
-  
-    .banner {
-      &__info {
-        &__primary {
-          font-size: 2rem;
-        }
-        &__secondary {
-          font-size: 1.5rem;
-        }
+  }
+
+  .banner {
+    align-items: flex-end;
+    &__info {
+      &__primary {
+        font-size: 2rem;
+      }
+      &__secondary {
+        font-size: 1.5rem;
       }
     }
-  
-    .packages {
-      margin: 1rem 0;
-      &__tagline {
-        margin: 3rem auto;
+  }
+
+  .packages {
+    margin: 1rem 0;
+    &__tagline {
+      margin: 3rem auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__container .package {
+      &__best-seller {
+        padding: 0.3rem 0;
+        font-size: 0.5rem;
+        transform: rotateZ(-45deg) translateX(-2.1rem) translateY(-0.8rem);
+      }
+
+      &__title {
         h1 {
           font-size: 1.5rem;
         }
-        p {
-          font-size: 1.2rem;
+      }
+
+      &__price {
+        &__now {
+          &--thousands {
+            font-size: 2.5rem;
+          }
         }
       }
-  
-      &__container .package {
-        &__best-seller {
-          padding: 0.3rem 0;
-          font-size: 0.5rem;
-          transform: rotateZ(-45deg) translateX(-2.1rem) translateY(-0.8rem);
+
+      &__benefits {
+        &__main,
+        &--highlight {
+          font-weight: bold;
+          font-size: small;
         }
-  
-        &__title {
-          h1 {
-            font-size: 1.5rem;
-          }
+      }
+
+      &__btn {
+        font-size: 0.6rem;
+        padding: 5px;
+      }
+    }
+  }
+
+  .advantages {
+    &__tagline {
+      font-size: 1.5rem;
+    }
+  }
+
+  .features {
+    &__tagline {
+      font-size: 1.5rem;
+    }
+
+    &__container {
+      .feature {
+        &__name {
+          font-weight: bold;
         }
-  
-        &__price {
-          &__now {
-            &--thousands {
-              font-size: 2.5rem;
-            }
-          }
-        }
-  
-        &__benefits {
-          &__main,
-          &--highlight {
-            font-weight: bold;
-            font-size: small;
-          }
-        }
-  
-        &__btn {
-          font-size: 0.6rem;
-          padding: 5px;
+        &__desc {
+          font-size: small;
         }
       }
     }
-  
-    .advantages {
-      &__tagline {
-        font-size: 1.5rem;
-      }
+  }
+
+  .laravel__support {
+    &--tagline {
+      font-size: 1.5rem;
     }
-  
-    .features {
-      &__tagline {
-        font-size: 1.5rem;
-      }
-  
-      &__container {
-        .feature {
-          &__name {
-            font-weight: bold;
-          }
-          &__desc {
-            font-size: small;
-          }
-        }
-      }
-    }
-  
-    .laravel__support {
-      &--tagline {
-        font-size: 1.5rem;
-      }
-  
-      &__container__left {
+
+    &__container {
+      align-items: flex-end;
+      &__left {
         &--tagline {
           font-size: 1rem;
         }
@@ -139,94 +142,95 @@
             margin: 0.5rem 0;
           }
         }
-  
+
         &__btn {
           font-size: 1rem;
         }
       }
     }
-  
-    .modules {
+  }
+
+  .modules {
+    &__tagline {
+      font-size: 1.5rem;
+    }
+
+    &__container {
+      gap: 5rem;
+    }
+
+    &__btn {
+      padding: 5px;
+    }
+  }
+
+  .advertisement {
+    align-items: flex-end;
+
+    &__left {
+      font-size: 1rem;
+
       &__tagline {
         font-size: 1.5rem;
       }
-  
-      &__container {
-        gap: 5rem;
+
+      &--btn {
+        padding: 5px 1rem;
       }
-  
-      &__btn {
-        padding: 5px;
-      }
-    }
-  
-    .advertisement {
-      align-items: flex-end;
-  
-      &__left {
-        font-size: 1rem;
-  
-        &__tagline {
-          font-size: 1.5rem;
-        }
-  
-        &--btn {
-          padding: 5px 1rem;
-        }
-      }
-    }
-  
-    .help__container {
-      padding: 2rem 0;
-  
-      .help__contact {
-        font-size: 1.5rem;
-      }
-  
-      .help__livechat {
-        font-size: 1rem;
-      }
-    }
-  
-    .footer {
-      > * > * {
-        font-size: small;
-      }
-  
-      &__lower {
-        &__logo {
-          padding: 0.2rem;
-          > img {
-            height: 1.5rem;
-          }
-        }
-      }
-  
-      &__card {
-        margin-right: 1rem;
-        &__title {
-          font-size: 0.8rem;
-        }
-      }
-  
-      &__subscription {
-        &--form {
-          padding: 0.2rem 0.5rem 0.2rem 1rem;
-        }
-        &--btn {
-          padding: 0.5rem;
-        }
-      }
-  
-      &__share__container {
-        display: flex;
-        > * {
-          margin: 0 0.5rem;
-        }
-      }
-    }
-  
-    .copyright span {
-      font-size: smaller;
     }
   }
+
+  .help__container {
+    padding: 2rem 0;
+
+    .help__contact {
+      font-size: 1.5rem;
+    }
+
+    .help__livechat {
+      font-size: 1rem;
+    }
+  }
+
+  .footer {
+    > * > * {
+      font-size: small;
+    }
+
+    &__lower {
+      &__logo {
+        padding: 0.2rem;
+        > img {
+          height: 1.5rem;
+        }
+      }
+    }
+
+    &__card {
+      margin-right: 1rem;
+      &__title {
+        font-size: 0.8rem;
+      }
+    }
+
+    &__subscription {
+      &--form {
+        padding: 0.2rem 0.5rem 0.2rem 1rem;
+      }
+      &--btn {
+        padding: 0.5rem;
+      }
+    }
+
+    &__share__container {
+      display: flex;
+      > * {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .copyright span {
+    font-size: smaller;
+  }
+}

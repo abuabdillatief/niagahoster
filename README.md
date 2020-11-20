@@ -50,7 +50,7 @@ $ docker-compose up --build
 
 ---
 
-#### Here, `BoxBilling` installation has been completed. Click `Finish` and follow other instructions to register as client or login as Admin using the credentials you put.
+#### Here, `BoxBilling` installation has been completed. Click `Finish` and follow other instructions to register as client or login as Admin using the credentials you previously put.
 
 ---
 <!-- 

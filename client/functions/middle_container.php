@@ -4,7 +4,7 @@
                 <?php foreach ($tools["tools"] as $tool): ?>
                 <div class="tools__item">
                     <img class="tools__item--img" src="./assets/logos/<?=$tool["image"]?>.svg" alt="" width="<?=$tool["width"]?>">
-                    <p class="mx-auto mt-3"><?=$tool["tech"]?></p>
+                    <p class="mx-auto mt-8"><?=$tool["tech"]?></p>
                 </div>
                 <?php endforeach;?>
             </section>
